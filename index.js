@@ -20,9 +20,9 @@ var productos_ruta = api.get('/test',
         }
         const wsaa = new Wsaa(conf)
 
-        // wsaa.setCertificate(pem)
-        // wsaa.setKey(key)
-        // console.log(wsaa.certificate)
+        wsaa.setCertificate(pem)
+        wsaa.setKey(key)
+        console.log(wsaa.certificate)
 
         const tra = wsaa.createTRA()
         console.log(tra)
